@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="iconfont/material-icons.css">
+    <link rel="stylesheet" href="materialize.min.css">
+    <title>Tracalorie</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #tracalorie-header {
+            text-align: center;
+            background-color: #000000;
+            color: white;
+
+        }
+
+        .meal{
+            padding: 10px auto 0 auto;
+            margin-top: 10px;
+        }
+        
+        .add-task{
+            margin: 0 0 0 10px;
+        }
+
+        a{
+            color: white;
+        }
+
+        .calorie-summation{
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .secondary-content{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="tracalorie-header">
+        <a href="#" class="clear btn" style="font-weight: bold; margin: 8px 0 8px 55%; background-color: #7f7f8c;">Clear All</a>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="container">
+                <div class="meal">
+                    <h4 style="text-align: center;">Tracalorie</h4>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input class="add-meal" type="text" id="meal" placeholder="Add Meal">
+                                </div>
+                                <div class="input-field col s6">
+                                    <input class="calories" type="number" placeholder="Calories">
+                                </div>
+                                <div class="add-edit"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5 class="calorie-summation">Total Calorie : <span class="calorie-number">0</span></h5>
+        <ul class="collection">
+        </ul>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
